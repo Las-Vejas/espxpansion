@@ -1,7 +1,10 @@
 [package]
 name = "espxpansion-driver"
 version = "0.1.0"
+description = "ESP32 expansion module for the Hackxpansion console"
+license = "MIT"
 edition = "2024"
+repository = "https://github.com/Las-Vejas/espxpansion"
 
 [dependencies]
 xpanse-api = "0.2.3"
