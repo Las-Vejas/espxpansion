@@ -8,3 +8,6 @@ repository = "https://github.com/Las-Vejas/espxpansion"
 
 [dependencies]
 xpanse-api = "0.2.3"
+
+[build]
+target = "thumbv8m.main-none-eabihf"
