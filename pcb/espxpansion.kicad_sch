@@ -2351,6 +2351,12 @@
 		(color 0 0 0 0)
 		(uuid "c67a0955-99fa-4d45-9f90-ed8493a2c1f4")
 	)
+	(junction
+		(at 163.83 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7fa2ef6-5aee-40f2-8ac1-ac0c5a2d6a11")
+	)
 	(no_connect
 		(at 133.35 85.09)
 		(uuid "05b95b0a-3a3e-449d-a44b-87ac1c3905e4")
@@ -2406,10 +2412,6 @@
 	(no_connect
 		(at 204.47 64.77)
 		(uuid "8bab03fe-8ace-48f5-aa6f-e1efc17c5dcc")
-	)
-	(no_connect
-		(at 173.99 82.55)
-		(uuid "979b1e30-8011-42a3-a81f-99c6d4c2e250")
 	)
 	(no_connect
 		(at 173.99 80.01)
@@ -2545,7 +2547,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 74.93) (xy 163.83 76.2)
+			(xy 163.83 67.31) (xy 163.83 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2562,6 +2564,16 @@
 			(type default)
 		)
 		(uuid "527ba98b-e183-499f-8948-adce1739840c")
+	)
+	(wire
+		(pts
+			(xy 171.45 74.93) (xy 171.45 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a073e3-dfe2-42fb-8e8d-5185f1172e7e")
 	)
 	(wire
 		(pts
@@ -2825,6 +2837,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 82.55) (xy 173.99 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea71631e-7658-4eeb-96d3-b05867ff5b1b")
+	)
+	(wire
+		(pts
 			(xy 189.23 48.26) (xy 189.23 49.53)
 		)
 		(stroke
@@ -2832,6 +2854,16 @@
 			(type default)
 		)
 		(uuid "ea7838df-6567-4407-b924-51c20733e097")
+	)
+	(wire
+		(pts
+			(xy 163.83 67.31) (xy 171.45 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee4fad43-8bb3-415e-b84f-662b9ed9786e")
 	)
 	(wire
 		(pts
@@ -2955,7 +2987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c5cd2b3-bee8-431c-a33c-e0d81b90500d")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 189.23 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3015,7 +3047,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3079,6 +3111,17 @@
 		)
 		(property "Description" "RF Module, ESP32-C6 SoC, Wi-Fi 802.11b/g/n/ax, Bluetooth, BLE, Zigbee, Thread, 32-bit, 3.3V, SMD, onboard antenna"
 			(at 189.23 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C5736265"
+			(at 189.23 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3321,6 +3364,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C720477"
+			(at 157.48 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c9a8bf06-f399-4e42-ac6f-b50ce6d6c8a4")
 		)
@@ -3348,7 +3402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28cae7ef-82bc-424b-ad2e-b4495bf198ad")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 166.37 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3408,7 +3462,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3471,6 +3525,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 86.36 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C140197"
 			(at 86.36 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3563,6 +3628,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C76991"
+			(at 233.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0bde0cfa-62a5-48ea-9de1-946b750fbe55")
 		)
@@ -3635,6 +3711,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 163.83 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2906861"
 			(at 163.83 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3956,7 +4043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60346129-8947-4413-a116-6e319aec8f7c")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR01"
 			(at 90.17 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4016,7 +4103,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4034,7 +4121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "606adb8e-e59c-4014-8953-565b937339c9")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR09"
 			(at 189.23 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4094,7 +4181,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR04")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4165,6 +4252,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C720477"
+			(at 160.02 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6b0a4524-a579-4cc1-b2f7-6a112411d5ea")
 		)
@@ -4192,7 +4290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7053397a-c34a-4f08-a8a3-746402efec5f")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 119.38 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -4252,7 +4350,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4269,7 +4367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82ac0cca-06da-4659-ab7d-c20af480f04c")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR05"
 			(at 153.67 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4329,7 +4427,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR07")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4392,6 +4490,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 220.98 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C60474"
 			(at 220.98 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4484,6 +4593,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C2906861"
+			(at 166.37 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "acb524c6-da33-40a6-b1b0-c46c1d53b9c5")
 		)
@@ -4500,8 +4620,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 163.83 74.93 0)
+		(lib_id "Device:R")
+		(at 171.45 71.12 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4509,31 +4630,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbfb7db0-9c7c-4ae4-96eb-e42e0e94c0f3")
-		(property "Reference" "#PWR09"
-			(at 163.83 78.74 0)
-			(hide yes)
+		(uuid "bde744e5-987d-4e58-abf3-ff416267a7ac")
+		(property "Reference" "R5"
+			(at 168.91 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 163.83 69.85 0)
+		(property "Value" "10k"
+			(at 168.91 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 163.83 74.93 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 173.228 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4544,7 +4665,98 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 74.93 0)
+			(at 171.45 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 171.45 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2906861"
+			(at 171.45 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "73c13306-78fc-45d5-b07c-b2332c2021ab")
+		)
+		(pin "1"
+			(uuid "a29c2cc4-c277-41ce-b402-2855b6c394b2")
+		)
+		(instances
+			(project "espxpansion"
+				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 163.83 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cbfb7db0-9c7c-4ae4-96eb-e42e0e94c0f3")
+		(property "Reference" "#PWR06"
+			(at 163.83 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 160.02 66.294 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4555,7 +4767,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 163.83 74.93 0)
+			(at 163.83 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4571,7 +4783,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR09")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4589,7 +4801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2e87d0b-1618-48ed-98cd-c5f08eb60fe9")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR04"
 			(at 151.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4649,7 +4861,7 @@
 		(instances
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "#PWR08")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4722,11 +4934,22 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C2906867"
+			(at 93.98 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "0a2bdd48-f11e-45c3-ab23-15b65ddea2c5")
+			(uuid "0a2bdd48-f11e-45c3-ab23-15b65ddea2c6")
 		)
 		(pin "1"
-			(uuid "148b5fe3-45f0-4464-bf9e-8779b3413d02")
+			(uuid "148b5fe3-45f0-4464-bf9e-8779b3413d03")
 		)
 		(instances
 			(project "espxpansion"
