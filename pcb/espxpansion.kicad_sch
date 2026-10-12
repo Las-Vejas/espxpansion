@@ -5,7 +5,7 @@
 	(uuid "eb4ca99d-1a76-4f92-b86d-2fd2bc193341")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -16,7 +16,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +25,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x04_Pin"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -57,7 +57,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -100,7 +100,18 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x04_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
@@ -121,6 +132,29 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -147,8 +181,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -166,7 +212,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -176,6 +222,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2316,6 +2398,12 @@
 		)
 	)
 	(junction
+		(at 189.23 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f348d32-5e5b-4278-b791-34c84c5719e1")
+	)
+	(junction
 		(at 163.83 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2332,24 +2420,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55d8ec3a-e834-44b2-8b85-478c8374a0b8")
-	)
-	(junction
-		(at 220.98 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9600ee74-add8-4ba2-934d-021314d991c2")
-	)
-	(junction
-		(at 189.23 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad045f1b-8327-435e-b098-3d65ba882bfc")
-	)
-	(junction
-		(at 220.98 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c67a0955-99fa-4d45-9f90-ed8493a2c1f4")
 	)
 	(junction
 		(at 163.83 67.31)
@@ -2477,6 +2547,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 76.2) (xy 246.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbb8c66-6790-42a8-8505-3bd3e016ef03")
+	)
+	(wire
+		(pts
 			(xy 220.98 58.42) (xy 220.98 57.15)
 		)
 		(stroke
@@ -2584,6 +2664,16 @@
 			(type default)
 		)
 		(uuid "57b3a49d-97fc-42b0-9a61-36872883b09b")
+	)
+	(wire
+		(pts
+			(xy 246.38 83.82) (xy 246.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b5f0ba-b0bb-4704-8483-736873ad872b")
 	)
 	(wire
 		(pts
@@ -2717,16 +2807,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 57.15) (xy 233.68 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6a88242-450c-4691-a4c0-73fe5da180c6")
-	)
-	(wire
-		(pts
 			(xy 165.1 57.15) (xy 166.37 57.15)
 		)
 		(stroke
@@ -2744,6 +2824,16 @@
 			(type default)
 		)
 		(uuid "ab3814f9-55e7-432f-a3af-804dc90c48d1")
+	)
+	(wire
+		(pts
+			(xy 241.3 83.82) (xy 246.38 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac682ccf-94ee-4a38-9ec6-29adbd34d70b")
 	)
 	(wire
 		(pts
@@ -2777,13 +2867,13 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 49.53) (xy 220.98 49.53)
+			(xy 246.38 76.2) (xy 246.38 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cdcdfd27-cfe6-48ec-944e-ec9cf5fb48ee")
+		(uuid "d66678ec-b8a8-4913-8995-10a1b0f9cc55")
 	)
 	(wire
 		(pts
@@ -2827,7 +2917,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 49.53) (xy 233.68 49.53)
+			(xy 189.23 49.53) (xy 220.98 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3562,8 +3652,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 233.68 53.34 0)
+		(lib_id "power:+3V3")
+		(at 246.38 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3572,31 +3662,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2c0a166b-75a0-49fb-bd10-ba45f0cff9c3")
-		(property "Reference" "C2"
-			(at 237.49 52.0699 0)
+		(uuid "2af64f84-7f4b-46c3-b040-149ed08d3a49")
+		(property "Reference" "#PWR011"
+			(at 246.38 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 237.49 54.6099 0)
+		(property "Value" "+3V3"
+			(at 246.38 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 234.6452 57.15 0)
+		(property "Footprint" ""
+			(at 246.38 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3607,7 +3696,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 53.34 0)
+			(at 246.38 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 246.38 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4d55e82-9063-4447-9f91-469dbb8b6d12")
+		)
+		(instances
+			(project "espxpansion"
+				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 220.98 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c0a166b-75a0-49fb-bd10-ba45f0cff9c3")
+		(property "Reference" "C2"
+			(at 224.79 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 224.79 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 221.9452 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3618,7 +3786,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 233.68 53.34 0)
+			(at 220.98 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3629,7 +3797,7 @@
 			)
 		)
 		(property "LCSC Part #" "C76991"
-			(at 233.68 53.34 0)
+			(at 220.98 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3874,7 +4042,85 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
+		(lib_id "power:GND")
+		(at 246.38 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47409e2f-a792-4d3a-a34c-d623d4d52f3b")
+		(property "Reference" "#PWR012"
+			(at 246.38 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "754ea8be-4e4f-4358-b5b0-45cf6e5553f8")
+		)
+		(instances
+			(project "espxpansion"
+				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
 		(at 236.22 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -3886,7 +4132,7 @@
 		(fields_autoplaced yes)
 		(uuid "53d2d8be-a434-40b2-bff1-e3f71c7025f4")
 		(property "Reference" "J2"
-			(at 236.855 73.66 0)
+			(at 236.855 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3896,7 +4142,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 236.855 76.2 0)
+			(at 236.855 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3905,7 +4151,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 236.22 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3927,7 +4173,18 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 236.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 236.22 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3943,6 +4200,12 @@
 		)
 		(pin "2"
 			(uuid "6159664f-2d85-4001-b539-3d0e9d6724b0")
+		)
+		(pin "3"
+			(uuid "d0a79dee-75b8-4b30-b59b-0fc372612334")
+		)
+		(pin "4"
+			(uuid "8d345fa1-503f-47ba-9ed1-0cc04a3189cd")
 		)
 		(instances
 			(project "espxpansion"
@@ -4428,99 +4691,6 @@
 			(project "espxpansion"
 				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 220.98 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e2b0974-4a59-402a-ad32-929abbd8b30e")
-		(property "Reference" "C1"
-			(at 224.79 52.0699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 224.79 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 221.9452 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C60474"
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1507cd0b-183f-4a3e-a35b-62839122d99f")
-		)
-		(pin "1"
-			(uuid "5f3b3d7f-4a99-49c3-a1d6-d48b85ba68fa")
-		)
-		(instances
-			(project "espxpansion"
-				(path "/eb4ca99d-1a76-4f92-b86d-2fd2bc193341"
-					(reference "C1")
 					(unit 1)
 				)
 			)

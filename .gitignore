@@ -1,2 +1,5 @@
 target/
 .DS_Store
+
+*-backups
+*.kicad_prl
