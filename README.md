@@ -1,8 +1,8 @@
 # espxpansion
 
-This is an expansion module for the [Hackxpansion console](https://github.com/hackclub/hackxpansion) the consists of the ESP32-C6-MINI.
+This is an expansion module for the [Hackxpansion console](https://github.com/hackclub/hackxpansion) which adds the ESP32-C6-MINI.
 
-The ESP can communicate to the Console using UART. There is also a breakout on the side of the board with the UART pins along with power and ground pins.
+The ESP can communicate to the Console using UART. There is also a breakout on the side of the board with the UART pins along with power and ground pins. programming can also be done via uart.
 There are also buttons for boot and reset.
 
 The case is 3d printed, and uses 2 M2 screws to screw into the pcb.
